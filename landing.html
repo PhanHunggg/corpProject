@@ -1,0 +1,1182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="./image/328cc1f23e4a3b73aa60ee6ced1897a1.jpeg">
+  <title> Landing</title>
+  <!-- font awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- google font jost 300 400 600 all -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&display=swap"
+    rel="stylesheet" />
+  <!-- bootstrap v4.6 css -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+    integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous" />
+  <!-- slick for carousel -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+    integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+    integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- animate for carousel -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+  <!-- maincss  -->
+  <link rel="stylesheet" href="./css/landing.css">
+</head>
+
+<body id="myBody">
+
+
+
+  <header id="site-header" class="fixed-top main-header">
+    <div class="container header__test" id="header__test">
+      <nav id="nav-change-color-text" class="navbar headerposi navbar-expand-lg navbar-dark">
+        <h1>
+          <a class="navbar-brand" href="">
+            <i class="fa fa-align-right"></i><span>Corp Vision</span>
+            <h2 class="logo">Vision to your Future</h2>
+          </a>
+        </h1>
+
+        <button id="button__header" class="navbar-toggler collapsed" type="button" data-toggle="collapse"
+          data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+          aria-label="Toggle navigation">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="./index.html">HOME<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./about.html">ABOUT</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./services.html">SERVICES</a>
+            </li>
+            <li class="nav-item dropdown active">
+              <a class="nav-link dropdown-toggle " href="#" role="button" data-toggle="dropdown" aria-expanded="false">
+                PAGE
+              </a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="./blog.html">BLOG POSTS</a>
+                <a class="dropdown-item" href="#">404 PAGE</a>
+                <a class="dropdown-item active" href="#">LANDING PAGE</a>
+                <a class="dropdown-item" href="#">ELEMENT PAGE</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./contact.html">CONTACT</a>
+            </li>
+          </ul>
+          <div id="headerSearch" class="header-search HeaderSearch">
+            <div class="control mr-3">
+              <div id="bg__search" class="btn-material">
+                <i class="fa fa-search icon-material-search searchBtn"></i>
+              </div>
+            </div>
+          </div>
+          <div class="mobile-position text-center DarkandLight">
+            <div class="navigation">
+              <button class="btn" id="switchButton" title="Click to switch theme">
+                <i class="far fa-moon"></i>
+                <i class="far fa-sun"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <div class="search__box">
+      <input type="text" placeholder="Search here . . .">
+    </div>
+  </header>
+  <!-- should not use css for bootsrap's css for carousel: carousel-inner, carousel-item because you cant use it again -->
+  <section class="carousel">
+    <div id="myCarouselCaptions" class="carousel slide carousel-fade" data-ride="carousel">
+      <div class="carousel-inner mycarousel-inner" data-interval="true">
+        <div class="carousel-item active mycarousel-item">
+          <img src="./image/b1.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-title d-none d-md-block">
+            <h1 class="animate__animated animate__flipInX"> We will solve your issues <br />
+              our vision to your future</h1>
+            <p class="animate__animated animate__fadeInDown"> Lorem ipsum dolor sit amet, elit, sed do eiusmod ut labore
+              et
+              dolore
+              <br />
+              magna aliqua. Ut enim ad minim veniam, quis nisi ut ea.
+            </p>
+            <button type="button"
+              class="btn btn-success carousel__btn animate__animated animate__fadeInUp mt-3 animate__delay-1s">Learn
+              More</button>
+          </div>
+          <div class="hero-overlay"></div>
+        </div>
+        <div class="carousel-item mycarousel-item">
+          <img src="./image/b2.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-title d-none d-md-block">
+            <h1 class="animate__animated animate__fadeInDown"> Embracing success do our <br />
+              best, need best advice</h1>
+            <p class="animate__animated animate__fadeInDown">Lorem ipsum dolor sit amet, elit, sed do eiusmod ut labore
+              et
+              dolore
+              <br />
+              magna aliqua. Ut enim ad minim veniam, quis nisi ut ea.
+            </p>
+            <button type="button"
+              class="btn btn-success carousel__btn animate__animated animate__fadeInDown mt-3 animate__delay-1s">Get
+              Started</button>
+          </div>
+          <div class="hero-overlay"></div>
+        </div>
+        <div class="carousel-item mycarousel-item">
+          <img src="./image/b3.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-title d-none d-md-block">
+            <h1 class="animate__animated animate__fadeInUp"> Digital transformation <br />
+              driven by technology</h1>
+            <p class="animate__animated animate__fadeInUp">Lorem ipsum dolor sit amet, elit, sed do eiusmod ut labore et
+              dolore
+              <br />
+              magna aliqua. Ut enim ad minim veniam, quis nisi ut ea.
+            </p>
+            <button type="button"
+              class="btn btn-success carousel__btn animate__animated animate__fadeInDown mt-3 animate__delay-1s">Learn
+              More</button>
+          </div>
+          <div class="hero-overlay"></div>
+        </div>
+        <div class="carousel-item mycarousel-item">
+          <img src="./image/b4.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-title d-none d-md-block">
+            <h1 class="animate__animated animate__flipInX"> For those who believe in <br />
+              living a mark</h1>
+            <p class="animate__animated animate__fadeInDown">Lorem ipsum dolor sit amet, elit, sed do eiusmod ut labore
+              et
+              dolore
+              <br />
+              magna aliqua. Ut enim ad minim veniam, quis nisi ut ea.
+            </p>
+            <button type="button"
+              class="btn btn-success carousel__btn animate__animated animate__fadeInUp mt-3 animate__delay-1s">Contact
+              Now</button>
+          </div>
+          <div class="hero-overlay"></div>
+        </div>
+      </div>
+      <button class="carousel-control-prev carousel__arrow" type="button" data-target="#myCarouselCaptions"
+        data-slide="prev">
+        <i class="fa-solid fa-arrow-right"></i>
+        <span class="sr-only">Previous</span>
+      </button>
+      <button class="carousel-control-next carousel__arrow" type="button" data-target="#myCarouselCaptions"
+        data-slide="next">
+        <i class="fa-solid fa-arrow-left"></i>
+        <span class="sr-only">Next</span>
+      </button>
+    </div>
+    <div class="shape">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 280">
+        <path fill-opacity="1">
+          <animate attributeName="d" dur="20000ms" repeatCount="indefinite"
+            values="M0,160L48,181.3C96,203,192,245,288,261.3C384,277,480,267,576,234.7C672,203,768,149,864,117.3C960,85,1056,75,1152,90.7C1248,107,1344,149,1392,170.7L1440,192L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z; M0,160L48,181.3C96,203,192,245,288,234.7C384,224,480,160,576,133.3C672,107,768,117,864,138.7C960,160,1056,192,1152,197.3C1248,203,1344,181,1392,170.7L1440,160L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z;												 M0,64L48,74.7C96,85,192,107,288,133.3C384,160,480,192,576,170.7C672,149,768,75,864,80C960,85,1056,171,1152,181.3C1248,192,1344,128,1392,96L1440,64L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z;
+            M0,160L48,181.3C96,203,192,245,288,261.3C384,277,480,267,576,234.7C672,203,768,149,864,117.3C960,85,1056,75,1152,90.7C1248,107,1344,149,1392,170.7L1440,192L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z;" />
+        </path>
+      </svg>
+    </div>
+  </section>
+
+
+  <section class="block py-5" id="about">
+    <div class="midd-w3 py-5">
+      <div class="container py-lg-5 py-md-4 py-2">
+        <div class="row">
+          <div class="col-lg-6 block__img">
+            <div class="position-relative">
+              <img src="./image/about2.jpg" alt="" />
+              <div class="bg__shape"></div>
+              <div class="block__box">
+                <div class="block__info">
+                  <h6 class="img__title">25+</h6>
+                  <p class="mt-1">Years of<br />Experience.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 mt-lg-0 mt-5 block-right align-self">
+            <h5 class="title-small mb-1">About our company</h5>
+            <h3 class="title-big">
+              We are the next generation of the business world, creative solutions
+            </h3>
+            <h4 class="mt-4">
+              Over 25 years, We complete every project with extra care as customer
+              needs.
+            </h4>
+            <p class="mt-4">
+              Lorem ipsum viverra feugiat. Pellen tesque libero ut justo, ultrices
+              in ligula. Semper at tempufddfel. Lorem ipsum dolor sit amet
+              consectetur adipisicing elit. Non quae, fugiat consequatur voluptatem
+              ad.
+            </p>
+            <a class="btn btn-success block__btn mt-md-5 mt-4 mr-md-4 mr-3" href="#">Read More</a>
+            <a data-toggle="modal" data-src="https://www.youtube.com/embed/7_r5q8jrvcs" data-target="#myModal"
+              class="block__video popup-with-zoom-anim play-view text-center position-absolute mt-md-4 mt-3 pt-md-3"
+              href="">
+              <i class="fa-solid fa-play "></i>
+            </a>
+          </div>
+        </div>
+        <div class="row justify-content-center mt-5 pt-lg-5">
+          <div class="col-lg-4 col-md-6 block__bottom">
+            <div class="block__item">
+              <i class="fa-brands fa-xing"></i>
+              <div class="block__tite">
+                <h4><a href="" class="title__head">Perfect Design</a></h4>
+                <p>Amus a ligula quam tesque et ut justo, Duis sed dolor et amet.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 block__bottom mt-md-0 mt-4">
+            <div class="block__item">
+              <i class="fa-regular fa-thumbs-up"></i>
+              <div class="block__tite">
+                <h4><a href="" class="title__head">Perfect Design</a></h4>
+                <p>Amus a ligula quam tesque et ut justo, Duis sed dolor et amet.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 block__bottom mt-lg-0 mt-4">
+            <div class="block__item">
+              <i class="fa-brands fa-angellist"></i>
+              <div class="block__tite">
+                <h4><a href="" class="title__head">Perfect Design</a></h4>
+                <p>Amus a ligula quam tesque et ut justo, Duis sed dolor et amet.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  </section>
+
+
+  <section class="features py-5">
+    <div class="features-container container py-lg-5 py-md-4 py-2">
+      <div class="row features-content">
+        <div class="col-md-12 col-lg-6 features-grid-left pr-lg-5">
+          <h5 class="title-small">Every day brings new challenges</h5>
+          <h3 class="title-big">Creative agency focused on vision, product and people</h3>
+          <p class="text-para">Aurabitur id gravida risus. Fusce eget ex fermentum, ultricies nisi ac sed,
+            lacinia est. Quisque ut lectus consequat, venenatis eros et, sed commodo risus. Nullam sit
+            amet laoreet elit. Suspendisse non init magnaa velit efficitur, dolor eget ex fermentum. </p>
+          <button type="button" class="btn features__btn btn-success mt-lg-5 mt-4">Discover More</button>
+        </div>
+        <div class="col-md-12 col-lg-6 features-grid-right mt-lg-0 mt-md-5 mt-4">
+          <div class="features-item">
+            <div class="features-item-box">
+              <div class="features-icon">
+                <img src="./image/icon1.png" alt="">
+              </div>
+              <h4><a href="" class="title-head">
+                  Our Process</a></h4>
+            </div>
+          </div>
+          <div class="features-item">
+            <div class="features-item-box">
+              <div class="features-icon">
+                <img src="./image/icon2.png" alt="">
+              </div>
+              <h4><a href="" class="title-head">
+                  How We Help</a></h4>
+            </div>
+          </div>
+          <div class="features-item">
+            <div class="features-item-box">
+              <div class="features-icon">
+                <img src="./image/icon3.png" alt="">
+              </div>
+              <h4><a href="" class="title-head">
+                  UI/UX Design</a></h4>
+            </div>
+          </div>
+          <div class="features-item">
+            <div class="features-item-box">
+              <div class="features-icon">
+                <img src="./image/icon4.png" alt="">
+              </div>
+              <h4><a href="" class="title-head">
+                  Creative Ideas</a></h4>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- SERVICES  -->
+  <section class="services py-5">
+    <div class="container py-lg-5 py-md-4 py-2">
+      <div class="services__content text-center mb-md-5 mb-4">
+        <h3 class="title-small">Beautifully crafted creative solutions</h3>
+        <h3 class="title-big mx-lg-5">What industries we serve?</h3>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-lg-4 col-md-6 grids-feature">
+          <div class="services__box">
+            <i class="fa-solid fa-money-bill-1"></i>
+            <div class="services__info">
+              <h4><a class="title__box" href="">Investment Planning</a></h4>
+              <p>Amus a ligula quam tesque et ut justo, Duis sed dolor et amet.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 grids-feature mt-md-0 mt-4">
+          <div class="services__box">
+            <i class="fa-regular fa-file-lines"></i>
+            <div class="services__info">
+              <h4><a class="title__box" href="">Commercial Projects</a></h4>
+              <p>Amus a ligula quam tesque et ut justo, Duis sed dolor et amet.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 grids-feature mt-lg-0 mt-4">
+          <div class="services__box">
+            <i class="fa-solid fa-building"></i>
+            <div class="services__info">
+              <h4><a class="title__box" href="">Banking & Finance</a></h4>
+              <p>Amus a ligula quam tesque et ut justo, Duis sed dolor et amet.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 grids-feature mt-4">
+          <div class="services__box">
+            <i class="fa-regular fa-clone"></i>
+            <div class="services__info">
+              <h4><a class="title__box" href="">Competitive Research</a></h4>
+              <p>Amus a ligula quam tesque et ut justo, Duis sed dolor et amet.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 grids-feature mt-4">
+          <div class="services__box">
+            <i class="fa-solid fa-code"></i>
+            <div class="services__info">
+              <h4><a class="title__box" href="">International Business</a></h4>
+              <p>Amus a ligula quam tesque et ut justo, Duis sed dolor et amet.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 grids-feature mt-4">
+          <div class="services__box">
+            <i class="fa-solid fa-chart-column"></i>
+            <div class="services__info">
+              <h4><a class="title__box" href="">Strategic Approach</a></h4>
+              <p>Amus a ligula quam tesque et ut justo, Duis sed dolor et amet.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="gallery py-5">
+    <div class="galleryHomePage py-lg-5 py-md-4 py-2">
+      <div class="title-content text-center mb-5">
+        <h3 class="title-small">Our Gallery</h3>
+        <h3 class="title-big mx-lg-5">Successful projects we've done</h3>
+      </div>
+      <div class="row gallery-img">
+        <div class="col-lg-4 col-md-6 gallery-item">
+          <a href="">
+            <img src="./image/c1.jpg" alt="" class="gallery-item-scale">
+            <span class="gallery-overlay"></span>
+            <div class="gallery-item-hover"></div>
+            <div class="gallery-item-content">
+              <span class="title title-big">Project 1</span>
+              <br>
+              <span class="content title-small">Quisque ut lectus, eros et, sed commodo risus.</span>
+            </div>
+          </a>
+        </div>
+        <div class="col-lg-4 col-md-6 gallery-item mt-md-0 mt-4">
+          <a href="">
+            <img src="./image/c2.jpg" alt="" class="gallery-item-scale">
+            <span class="gallery-overlay"></span>
+            <div class="gallery-item-hover"></div>
+            <div class="gallery-item-content">
+              <span class="title title-big">Project 2</span>
+              <br>
+              <span class="content title-small">Quisque ut lectus, eros et, sed commodo risus.</span>
+            </div>
+          </a>
+        </div>
+        <div class="col-lg-4 col-md-6 gallery-item mt-md-0 mt-4">
+          <a href="">
+            <img src="./image/c3.jpg" alt="" class="gallery-item-scale">
+            <span class="gallery-overlay"></span>
+            <div class="gallery-item-hover"></div>
+            <div class="gallery-item-content">
+              <span class="title title-big">Project 3</span>
+              <br>
+              <span class="content title-small">Quisque ut lectus, eros et, sed commodo risus.</span>
+            </div>
+          </a>
+        </div>
+        <div class="col-lg-4 col-md-6 gallery-item mt-4 ">
+          <a href="">
+            <img src="./image/c4.jpg" alt="" class="gallery-item-scale">
+            <span class="gallery-overlay"></span>
+            <div class="gallery-item-hover"></div>
+            <div class="gallery-item-content">
+              <span class="title title-big">Project 4</span>
+              <br>
+              <span class="content title-small">Quisque ut lectus, eros et, sed commodo risus.</span>
+            </div>
+          </a>
+        </div>
+        <div class="col-lg-4 col-md-6 gallery-item mt-4 ">
+          <a href="">
+            <img src="./image/c5.jpg" alt="" class="gallery-item-scale">
+            <span class="gallery-overlay"></span>
+            <div class="gallery-item-hover"></div>
+            <div class="gallery-item-content">
+              <span class="title title-big">Project 5</span>
+              <br>
+              <span class="content title-small">Quisque ut lectus, eros et, sed commodo risus.</span>
+            </div>
+          </a>
+        </div>
+        <div class="col-lg-4 col-md-6 gallery-item mt-4 ">
+          <a href="">
+            <img src="./image/c6.jpg" alt="" class="gallery-item-scale">
+            <span class="gallery-overlay"></span>
+            <div class="gallery-item-hover"></div>
+            <div class="gallery-item-content">
+              <span class="title title-big">Project 6</span>
+              <br>
+              <span class="content title-small">Quisque ut lectus, eros et, sed commodo risus.</span>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="row pt-5 mt-5 gallery-company-logos">
+        <div class="col-lg-2 col-md-3 col-4">
+          <img src="./image/brand1.png" alt="" class="">
+        </div>
+        <div class="col-lg-2 col-md-3 col-4">
+          <img src="./image/brand6.png" alt="" class="">
+        </div>
+        <div class="col-lg-2 col-md-3 col-4">
+          <img src="./image/brand3.png" alt="" class="">
+        </div>
+        <div class="col-lg-2 col-md-3 col-4 mt-md-0 mt-4">
+          <img src="./image/brand4.png" alt="" class="">
+        </div>
+        <div class="col-lg-2 col-md-3 col-4 mt-lg-0 mt-4">
+          <img src="./image/brand5.png" alt="" class="">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="myprogress">
+    <div class="myprogress-container py-5">
+      <div class="myprogress-content container py-lg-5 py-md-4 py-2">
+        <div class="row align-items-center">
+          <div class="col-lg-6 myprogress-imgleft">
+            <img src="./image/about.jpg" alt="">
+          </div>
+          <div class="col-lg-6">
+            <span class="title-small">Your success is our success</span>
+            <h3 class="title-big mb-4 pb-lg-2">Web design, marketing &amp; SEO solutions that get results</h3>
+            <div class="progress-info info1">
+              <h6 class="progress-tittle" id="progress-tittle">
+                Marketing <span class="">80%</span></h6>
+              <div class="progress">
+                <div class="progress-bar gradient-1" role="progressbar" style="width: 79%" aria-valuenow="80"
+                  aria-valuemin="0" aria-valuemax="100">
+                </div>
+              </div>
+            </div>
+            <div class="progress-info info2">
+              <h6 class="progress-tittle">
+                Responsive Web design <span class="">95%</span>
+              </h6>
+              <div class="progress">
+                <div class="progress-bar gradient-2" role="progressbar" style="width: 94%" aria-valuenow="95"
+                  aria-valuemin="0" aria-valuemax="100">
+                </div>
+              </div>
+            </div>
+            <div class="progress-info info3">
+              <h6 class="progress-tittle">
+                Analytics <span class="">60%</span></h6>
+              <div class="progress">
+                <div class="progress-bar gradient-3" role="progressbar" style="width: 59%" aria-valuenow="60"
+                  aria-valuemin="0" aria-valuemax="100">
+                </div>
+              </div>
+            </div>
+            <div class="progress-info info4 mb-0">
+              <h6 class="progress-tittle">
+                Web Development <span class="">85%</span></h6>
+              <div class="progress">
+                <div class="progress-bar gradient-4" role="progressbar" style="width: 84%" aria-valuenow="85"
+                  aria-valuemin="0" aria-valuemax="100">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="testimonials py-5">
+    <div class="testimonials-container container py-lg-4 py-md-3 py-2 pb-lg-0">
+      <div class="testimonials-content">
+        <h5 class="title-small text-center mb-1">Happy Clients Feedback</h5>
+        <h3 class="title-big text-center mb-sm-5 mb-4">Reviews and Testimonials</h3>
+        <div id="testimonialsExampleCaptions" class="carousel slide" data-ride="carousel">
+          <ol class="carousel-indicators">
+            <li id="testimonials-dots" data-target="#testimonialsExampleCaptions" data-slide-to="0" class="active">
+              <span></span>
+            </li>
+            <li id="testimonials-dots" data-target="#testimonialsExampleCaptions" data-slide-to="1">
+              <span></span>
+            </li>
+            <li id="testimonials-dots" data-target="#testimonialsExampleCaptions" data-slide-to="2">
+              <span></span>
+            </li>
+            <li id="testimonials-dots" data-target="#testimonialsExampleCaptions" data-slide-to="3">
+              <span></span>
+            </li>
+          </ol>
+          <div class="carousel-inner mytestimonials-inner">
+            <div class="carousel-item testimonials-item active">
+              <p>
+                Lorem ipsum dolor sit amet elit. Velit beatae laudantium voluptate rem ullam dolore nisi voluptatibus
+                esse <br> quasi, doloribus tempora. Dolores molestias adipisci dolo amet!. Lorem ipsum dolor sit amet
+                consectetur <br>
+                adipisicing elit. Esse architecto est ea sunt eligendi cum?
+              </p>
+              <div class="testimonials-caption">
+                <div class="testimonials-ava">
+                  <img src="./image/team1.jpg" class="" alt="...">
+                </div>
+                <div class="testimonials-name">
+                  <h3>John wilson</h3>
+                  <p class="indentity">Student</p>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item testimonials-item">
+              <p>
+                Lorem ipsum dolor sit amet elit. Velit beatae laudantium voluptate rem ullam dolore nisi voluptatibus
+                esse <br> quasi, doloribus tempora. Dolores molestias adipisci dolo amet!. Lorem ipsum dolor sit amet
+                consectetur <br>
+                adipisicing elit. Esse architecto est ea sunt eligendi cum?
+              </p>
+              <div class="testimonials-caption">
+                <div class="testimonials-ava">
+                  <img src="./image/team2.jpg" class="" alt="...">
+                </div>
+                <div class="testimonials-name">
+                  <h3>John wilson</h3>
+                  <p class="indentity">Student</p>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item testimonials-item">
+              <p>
+                Lorem ipsum dolor sit amet elit. Velit beatae laudantium voluptate rem ullam dolore nisi voluptatibus
+                esse <br> quasi, doloribus tempora. Dolores molestias adipisci dolo amet!. Lorem ipsum dolor sit amet
+                consectetur <br>
+                adipisicing elit. Esse architecto est ea sunt eligendi cum?
+              </p>
+              <div class="testimonials-caption">
+                <div class="testimonials-ava">
+                  <img src="./image/team3.jpg" class="" alt="...">
+                </div>
+                <div class="testimonials-name">
+                  <h3>John wilson</h3>
+                  <p class="indentity">Student</p>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item testimonials-item">
+              <p>
+                Lorem ipsum dolor sit amet elit. Velit beatae laudantium voluptate rem ullam dolore nisi voluptatibus
+                esse <br> quasi, doloribus tempora. Dolores molestias adipisci dolo amet!. Lorem ipsum dolor sit amet
+                consectetur <br>
+                adipisicing elit. Esse architecto est ea sunt eligendi cum?
+              </p>
+              <div class="testimonials-caption">
+                <div class="testimonials-ava">
+                  <img src="./image/team4.jpg" class="" alt="...">
+                </div>
+                <div class="testimonials-name">
+                  <h3>John wilson</h3>
+                  <p class="indentity">Student</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="homeblock">
+    <div class="homeblock-bg py-5">
+      <div class="homeblock-container container py-lg-5 py-md-3">
+        <div class="row homeblock-content">
+          <div class="col-lg-6 homeblock-title">
+            <span class="title-small">About Us</span>
+            <h3 class="title-big">We make the best strategies for you, Enhancing your success</h3>
+            <p class="title-verysmall">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+              incididunt ut
+              labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud ullamco laboris nisi ut ex ea. </p>
+            <ul class="pt-lg-2 mt-4">
+              <li class="service-link mb-3"><a href=""><span class="fa fa-check-circle"></span>
+                  UI/UX Design and Development</a></li>
+              <li class="service-link mb-3"><a href=""><span class="fa fa-check-circle"></span>
+                  Branding Design and Identity</a></li>
+              <li class="service-link"><a href=""><span class="fa fa-check-circle"></span>
+                  Mobile App Design and Development</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-6 homeblock-AboutImage">
+            <div class="row homeblock-imgflex">
+              <div class="positionup col-6">
+                <img class="zeroimg" src="./image/a.jpg" alt="">
+              </div>
+              <div class="positiondown col-6">
+                <img class="firstimg" src="./image/c1.jpg" alt="">
+                <img class="secondimg" src="./image/c4.jpg" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DIGITAL  -->
+  <section class="digital py-5">
+    <div class="container py-lg-5 py-md-4 py-2">
+      <div class="row digital__content align-items-center">
+        <div class="col-lg-6">
+          <h5 class="title-small mb-3">
+            Web design and digital marketing
+          </h5>
+          <h3 class="title-big">We think strategy, UX design, and web development</h3>
+          <div class="digital__text">
+            <div class="digital__item">
+              <span>1200+</span>
+              <h4>Happy Clients</h4>
+              <p>We help our clients increase profits by increasing their visibility online.</p>
+            </div>
+            <div class="digital__item">
+              <span>13k+</span>
+              <h4>Completed projects </h4>
+              <p>We help our clients increase profits by increasing their visibility online.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-6 align-self mt-lg-0 mt-md-5 mt-4 pr-md-3 pr-2">
+          <img class="radius-image img-fluid" src="./image/ab.jpg" alt="emloyment">
+        </div>
+        <div class="col-lg-3 col-6 align-self mt-lg-0 mt-md-5 mt-4 pl-md-3 pl-2">
+          <img class="radius-image img-fluid" src="./image/ab2.jpg" alt="emloyment">
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- VIDEO  -->
+  <div class="video py-5">
+    <div class="container px-0 py-lg-5 py-md-4 py-2">
+      <div class="video__info position-relative">
+        <div class="video__heading mx-auto container text-center">
+          <h3 class="title-big">We are the next generation of the business world, creative solutions</h3>
+          <p class="mt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit sunt in culpa qui officia sed
+            deserunt<br>mollit anim id est laborum mollit anim id est nulla.</p>
+          <a data-toggle="modal" data-src="https://www.youtube.com/embed/7_r5q8jrvcs" data-target="#myModal" href=""
+            class="popup-with-zoom-anim play-view text-center mt-4"><span class="video-play-icon">
+              <i class="fa-solid fa-play "></i>
+            </span></a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- TEAM  -->
+  <section class="py-5 team">
+    <div class="container py-lg-5 py-md-4 py-2">
+      <h5 class="title-small text-center">Our Professionals </h5>
+      <h3 class="title-big text-center mx-0 mb-lg-5 mb-4">Meet the Team </h3>
+      <div class="row team__content justify-content-center">
+        <div class="col-lg-3 col-sm-6 team-wrap">
+          <div class="team__item text-center">
+            <div class="team__img">
+              <img class="img-fluid radius-image" src="./image/team1.jpg" alt="">
+              <div class="team__overlay">
+                <div class="team__details text-center">
+                  <p>Our web design team will spend time with our digital marketing team.</p>
+                  <div class="team__icon mt-4">
+                    <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href=""><i class="fa-brands fa-twitter"></i></a>
+                    <a href=""><i class="fa-brands fa-google-plus-g"></i></a>
+                    <a href=""><i class="fa-regular fa-envelope"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <a href="">
+              <h6 class="team__title">Amelia Jessica</h6>
+            </a>
+            <p>Designer</p>
+          </div>
+        </div>
+        <div class="col-lg-3 col-sm-6 team-wrap mt-sm-0 mt-5">
+          <div class="team__item text-center">
+            <div class="team__img">
+              <img class="img-fluid radius-image" src="./image/team2.jpg" alt="">
+              <div class="team__overlay">
+                <div class="team__details text-center">
+                  <p>Our web design team will spend time with our digital marketing team.</p>
+                  <div class="team__icon mt-4">
+                    <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href=""><i class="fa-brands fa-twitter"></i></a>
+                    <a href=""><i class="fa-brands fa-google-plus-g"></i></a>
+                    <a href=""><i class="fa-regular fa-envelope"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <a href="">
+              <h6 class="team__title">Elizabeth Tracy</h6>
+            </a>
+            <p>Photographer</p>
+          </div>
+        </div>
+        <div class="col-lg-3 col-sm-6 team-wrap mt-lg-0 mt-5">
+          <div class="team__item text-center">
+            <div class="team__img">
+              <img class="img-fluid radius-image" src="./image/team3.jpg" alt="">
+              <div class="team__overlay">
+                <div class="team__details text-center">
+                  <p>Our web design team will spend time with our digital marketing team.</p>
+                  <div class="team__icon mt-4">
+                    <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href=""><i class="fa-brands fa-twitter"></i></a>
+                    <a href=""><i class="fa-brands fa-google-plus-g"></i></a>
+                    <a href=""><i class="fa-regular fa-envelope"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <a href="">
+              <h6 class="team__title">Charlotte Ava</h6>
+            </a>
+            <p>Designer</p>
+          </div>
+        </div>
+        <div class="col-lg-3 col-sm-6 team-wrap mt-lg-0 mt-5">
+          <div class="team__item text-center">
+            <div class="team__img">
+              <img class="img-fluid radius-image" src="./image/team4.jpg" alt="">
+              <div class="team__overlay">
+                <div class="team__details text-center">
+                  <p>Our web design team will spend time with our digital marketing team.</p>
+                  <div class="team__icon mt-4">
+                    <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href=""><i class="fa-brands fa-twitter"></i></a>
+                    <a href=""><i class="fa-brands fa-google-plus-g"></i></a>
+                    <a href=""><i class="fa-regular fa-envelope"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <a href="">
+              <h6 class="team__title">Emma Susan</h6>
+            </a>
+            <p>Designer</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- CONTACT  -->
+  <section class="contact py-5">
+    <div class="container pt-lg-5 pt-md-3">
+      <div class="contact__content text-center mb-md-5 mb-4">
+        <h3 class="title-big mx-lg-5">We are a full-service creative agency</h3>
+        <p class="mt-2">Aurabitur id gravida risus. Fusce eget ex fermentum, ultricies nisi ac sed, lacinia est. Quisque
+          ut lectus consequat, eros et. </p>
+      </div>
+      <div class="contact__info">
+        <div class="row contact__infos justify-content-center">
+          <div class="col-lg-4 col-md-6">
+            <div class="contact__box">
+              <i class="fa-regular fa-map"></i>
+              <div class="contact__text">
+                <h3 class="mb-2">Our Location:</h3>
+                <p>Corp Vision, 343 marketing, #21 cravel 1st street, NY - 62617.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 mt-md-0 mt-4">
+            <div class="contact__box">
+              <i class="fa-solid fa-mobile-screen-button"></i>
+              <div class="contact__text">
+                <h3 class="mb-2">Give us a call</h3>
+                <p><a href="tel:++12 404-11-22-89">+12 404-11-22-89</a></p>
+                <p><a href="tel:++12 404-11-22-99">+12 404-11-22-99</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 mt-lg-0 mt-4">
+            <div class="contact__box">
+              <i class="fa-regular fa-envelope"></i>
+              <div class="contact__text">
+                <h3 class="mb-2">Help Desk</h3>
+                <p><a href="mailto:company@gmail.com">company@gmail.com</a></p>
+                <p><a href="mailto:support@gmail.com">support@gmail.com</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MAP  -->
+  <section class="map">
+    <div class="container">
+      <div class="pt-lg-3 map__content">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.5097522332103!2d106.67765461458902!3d10.772215392324396!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752fca39e3b493%3A0x865af6a617c57d82!2sCyberSoft%20Academy!5e0!3m2!1svi!2s!4v1664723858925!5m2!1svi!2s"
+          width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- FORM  -->
+  <section class="formm py-5">
+    <div class="form__contact">
+      <div class="container py-lg-3">
+        <div class="form__top">
+          <div class="form__title">
+            <h3 class="title-big text-center mb-2">Let’s talk about your project</h3>
+            <p class="mb-lg-5 mb-4 text-center">We have made it easy for clients to reach us and get their solutions
+              weaved</p>
+          </div>
+          <div class="form__space">
+            <input type="text" placeholder="Name">
+            <input type="number" placeholder="Your Phone Number">
+            <input type="email" placeholder="Email*">
+            <input type="text" placeholder="Subject">
+          </div>
+          <div class="form__bot">
+            <textarea placeholder="Message*" name="w3lMessage" id="w3lMessage"></textarea>
+          </div>
+          <div class="form__button"><button type="button" class="btn form__btn btn-success">Submit Now</button></div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="project" id="subscribe">
+    <div class="project-container">
+      <div class="project-info">
+        <div class="project-header">
+          <h3 class="">Let’s find out how to work together</h3>
+          <p class="">
+            Lorem ipsum dolor sit amet elit. Velit beatae rem ullam dolore nisi esse quasi, sit amet.
+            <br> Lorem ipsum dolor sit amet elit.
+          </p>
+        </div>
+        <form action="" class="project-subscribe mt-5" method="post">
+          <div class="input-group-text"><span class="fa fa-paper-plane"></span></div>
+          <input type="email" name="email" placeholder="Your Email Address" required="">
+          <button type="button" class="btn btn-success">Subscribe</button>
+        </form>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <div class="footer__content py-5">
+      <div class="container py-md-4">
+        <div class="row footer__top">
+          <div class="col-lg-4 col-md-6 footer-list footer-1">
+            <div class="footer__logo mb-4">
+              <a class="navbar-brand" href="">
+                <i class="fa fa-align-right"></i><span>Corp Vision</span>
+                <h2 class="logo">Vision to your Future</h2>
+              </a>
+            </div>
+            <p>Lorem ipsum viverra feugiat. Pellen tesque libero ut justo, ultrices in ligula. Semper at tempufddfel.
+              Lorem ipsum dolor sit amet Semper at elit team advisors.</p>
+            <div class="footer__icon mt-md-4 mt-3">
+              <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+              <a href=""><i class="fa-brands fa-twitter"></i></a>
+              <a href=""><i class="fa-brands fa-instagram"></i></a>
+              <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 footer-list footer-1 pr-lg-5 mt-md-0 mt-5">
+            <h6 class="footer__title">Contact Info </h6>
+            <p class="mb-2">Address : Corp Vision, 343 marketing, #21 cravel 1st lane street, NY - 62617.</p>
+            <p class="mb-2">Phone Number :
+              <a href="tel:+1(21) 234 4567">+1(21) 234 4567</a>
+            </p>
+            <p class="mb-2">Email :
+              <a href="mailto:info@example.com">info@example.com</a>
+            </p>
+            <p class="mb-2">
+              Support :
+              <a href="mailto:info@support.com">info@support.com</a>
+            </p>
+          </div>
+          <div class="col-lg-2 col-md-6 col-sm-5 col-6 footer-list footer-2 mt-lg-0 mt-5">
+            <div class="footer__right">
+              <h6 class="footer__title">Categories</h6>
+              <ul>
+                <li><a href="">Marketing Strategy</a></li>
+                <li><a href="">Startup Business</a></li>
+                <li><a href="">Web development</a></li>
+              </ul>
+
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-6 col-sm-5 col-6 footer-list footer-2 mt-lg-0 mt-5">
+            <div class="footer__right">
+              <h6 class="footer__title">Meta</h6>
+              <ul>
+                <li><a href="">Log in</a></li>
+                <li><a href="">Entries feed</a></li>
+                <li><a href="">Comments feed</a></li>
+                <li><a href="">WordPress.org</a></li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <div class="footer__copyright text-center">
+      <div class="container footer__bot">
+        <p>&#169 2022 Corp Vision All Rights Reserved | WordPress Theme by <a href="">W3Layouts.</a> </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- MODAL  -->
+  <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-body">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+          <!-- 16:9 aspect ratio -->
+          <div class="embed-responsive embed-responsive-16by9">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/7_r5q8jrvcs"
+              title="YouTube video player" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- BACKTOTOP -->
+  <div class="backtotop">
+    <a class="back_to_top cd-top text-replace js-cd-top" href="#"><i class="fa-solid fa-angle-up"></i></a>
+  </div>
+
+  <!-- slick for carousel -->
+  <!-- you should add Evondev snippets extension in vscode and include slick library by using: "html-slick-slider" at the bottom of your body (first bottom card) -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
+    integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <!-- bootstrap v4.6 js -->
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+    crossorigin="anonymous"></script>
+  <!-- slick js -->
+  <!-- warning: put slick js before file bootstrap jquery so that it could run-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+    integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <!-- slick w3layouts for animate hero-content carousel
+    <script src="https://wp.w3layouts.com/corpvision/wp-content/themes/corpvision/assets/js/slick.js"></script>
+    <script src="https://wp.w3layouts.com/corpvision/wp-content/themes/corpvision/assets/js/script.js"></script> -->
+  <!-- slick for carousel -->
+  <script>
+    $(".carousel-bg").slick({
+      infinite: true,
+      speed: 500,
+      fade: true,
+      cssEase: "linear",
+      arrows: true,
+      //chạy tự động slide
+      autoplay: true,
+      autospeed: 3000,
+    });
+  </script>
+  <!-- light dark theme -->
+  <script>
+    /**
+    Solution: 
+    Khi click vào nút moon, thẻ body sẽ được thêm class dark.
+    Dựa vào class dark, ta viết css dành riêng cho dark theme.
+    Ngược lại, khi click vào nút sun, ta sẽ xóa class dark để css light theme hiện lại
+    */
+    //gọi thẻ button có id là switchButton
+    // gắn chức năng click cho switchButton
+    var themeCurrent = localStorage.getItem("theme")
+    if (themeCurrent == "dark") {
+      document.getElementById("myBody").classList.add("dark");
+    } else {
+      document.getElementById("myBody").classList.remove("dark");
+    }
+
+    function handleCheckTheme() {
+      if (!(document.getElementById("myBody").classList.contains("dark"))) {
+        localStorage.setItem("theme", 'dark')
+        document.getElementById("myBody").classList.add("dark");
+      } else {
+        localStorage.setItem("theme", '')
+        document.getElementById("myBody").classList.remove("dark");
+      }
+    }
+
+    document.getElementById("switchButton").addEventListener("click", handleCheckTheme)      //khi button được click thì tìm đến thẻ body có id là myBody
+      // dùng classlist để gọi thuộc tính class của thẻ body
+      //Sử dụng toggle() để thêm hoặc xóa 1 class của thẻ html. Nếu thẻ body không có class dark thì toggle sẽ thêm class dark vào body. Ngược lại, nếu thẻ body đang có class dark thì toogle sẽ xóa class dark đi.
+  </script>
+
+  <!-- SEARCH BUTTON  -->
+  <script>
+    let searchBtn = document.querySelector('.searchBtn')
+    let search__box = document.querySelector('.search__box')
+    let bg__search = document.getElementById('bg__search')
+    bg__search.onclick = function () {
+      search__box.classList.toggle('active')
+      bg__search.classList.toggle('active')
+      if(document.getElementById('myBody').classList.contains('dark')){
+        search__box.classList.add('dark')
+      }else{
+        search__box.classList.remove('dark')
+      }
+    }
+
+  </script>
+
+  <!-- header change from transparent to white when scroll over carousel -->
+  <script>
+    $(window).on("scroll", function () {
+      var scroll = $(window).scrollTop();
+
+      if (scroll >= 80) {
+        // transform color header impact nav-fixed card in css
+        $("#site-header").addClass("nav-fixed");
+        // transform color text in header
+        $("#nav-change-color-text").addClass("navbar-light");
+        $("#nav-change-color-text").removeClass("navbar-dark");
+      } else {
+        $("#site-header").removeClass("nav-fixed");
+        $("#nav-change-color-text").addClass("navbar-dark");
+        $("#nav-change-color-text").removeClass("navbars-light");
+      }
+    });
+
+      //Main navigation Active Class Add Remove
+      // $(".navbar-toggler").on("click", function () {
+      //   $("header").toggleClass("active");
+      // });
+      // $(document).on("ready", function () {
+      //   if ($(window).width() > 991) {
+      //     $("header").removeClass("active");
+      //   }
+      //   $(window).on("resize", function () {
+      //     if ($(window).width() > 991) {
+      //       $("header").removeClass("active");
+      //     }
+      //   });
+      // });
+  </script>
+
+  <!-- nav__header JS  -->
+  <script>
+
+    function handleButtonMenu() {
+      document.getElementById("switchButton").style.position = "absolute";
+      document.getElementById("switchButton").style.top = "25px";
+      document.getElementById("switchButton").style.right = "55px";
+      document.getElementById("navbarSupportedContent").classList.add("text-center");
+      document.getElementById("headerSearch").style.position = "absolute";
+      document.getElementById("headerSearch").style.top = "22px";
+      document.getElementById("headerSearch").style.right = "83px";
+      document.getElementById("header__test").classList.remove("container");
+
+      if (!(document.getElementById("header__test").classList.contains("nav__header"))) {
+        document.getElementById("header__test").classList.add("nav__header");
+      } else {
+        document.getElementById("header__test").classList.remove("nav__header");
+      }
+
+
+    }
+
+    document.getElementById("button__header").addEventListener("click", handleButtonMenu);
+  </script>
+
+  <!-- JS MODAL  -->
+  <script>
+    $(document).ready(function () {
+      // Gets the video src from the data-src on each button
+      var $videoSrc;
+      $('.video-btn').click(function () {
+        $videoSrc = $(this).data("src");
+      });
+      console.log($videoSrc);
+      // when the modal is opened autoplay it  
+      $('#myModal').on('shown.bs.modal', function (e) {
+        // set the video src to autoplay and not to show related video. Youtube related video is like a box of chocolates... you never know what you're gonna get
+        $("#video").attr('src', $videoSrc + "?autoplay=1&amp;modestbranding=1&amp;showinfo=0");
+      })
+      // stop playing the youtube video when I close the modal
+      $('#myModal').on('hide.bs.modal', function (e) {
+        // a poor man's stop video
+        $("#video").attr('src', $videoSrc);
+      })
+      // document ready  
+    });
+  </script>
+
+  <!-- BACKTOTOP -->
+  <script src="./js/util.js"></script>
+  <script src="./js/main-backtotop.js"></script>
+</body>
+</html>
