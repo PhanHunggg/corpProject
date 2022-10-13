@@ -1010,6 +1010,27 @@ footer {
   margin: 90px auto;
 }
 
+@media screen and (max-width: 991px) {
+  .modal-dialog {
+    max-width: 610px; 
+    margin: 120px auto;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .modal-dialog {
+    max-width: 525px; 
+    margin: 150px auto;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .modal-dialog {
+    max-width: 325px; 
+    margin: 240px auto;
+  }
+}
+
 .modal-body {
   position: relative;
   padding: 0px;
