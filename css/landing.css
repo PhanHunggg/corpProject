@@ -834,6 +834,11 @@ header.nav-fixed {
   -o-transition: 0.3s ease;
 }
 
+.features-item:hover {
+  box-shadow: rgb(1 1 1 / 46%) 0px 5px 5px 0px;
+  transform: translateY(-20px);
+}
+
 .dark .features-item {
   background-color: #151421;
 }
