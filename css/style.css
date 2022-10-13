@@ -310,7 +310,7 @@ header.nav-fixed {
 
 @media screen and (max-width: 1199px) {
   .control .btn-material.active{
-    transform: translateX(80px) !important;
+    transform: translateX(80px) ;
   }
 }
 
