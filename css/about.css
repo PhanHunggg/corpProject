@@ -730,6 +730,12 @@ header.nav-fixed {
   overflow: hidden;
 }
 .team__img img {
+  background-color: #f7f7f7;
+  transition: all 0.2s ease-in-out;
+  overflow: hidden;
+  width: 100%;
+}
+.radius-image {
   border-radius: 8px;
 }
 .team__overlay {
@@ -762,6 +768,7 @@ header.nav-fixed {
 .team__details p {
   color: #fff;
   font-size: 1.25rem;
+  line-height: 1.4;
 }
 .team__icon a {
   display: inline-block;
@@ -783,7 +790,7 @@ header.nav-fixed {
   color: #3f3a64;
   transition: all 0.5s;
 }
-.dark .team__title{
+.dark .team__title {
   color: #eee;
 }
 .team__title:hover {
