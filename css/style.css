@@ -770,7 +770,8 @@ if responsive 700px and 400px 450px will have a distance between img and shape *
 
 .features-item-box h4 a {
   text-decoration: none;
-  color: black;
+  color: #3f3a64;
+  font-weight: 700;
 }
 
 .dark .features-item-box h4 a {
