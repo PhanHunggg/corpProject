@@ -826,9 +826,9 @@ if responsive 700px and 400px 450px will have a distance between img and shape *
 }
 
 .services-info a:last-child {
-  font-size: 20px;
-  font-weight: 500;
-  color: #5a626b;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #3f3a64;
 }
 
 .services-info a:last-child:hover {
