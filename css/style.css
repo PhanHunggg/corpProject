@@ -777,6 +777,17 @@ if responsive 700px and 400px 450px will have a distance between img and shape *
   color: white;
 }
 
+.btn.features__btn {
+  padding: 15px 50px;
+  font-size: 1rem;
+  line-height: 18px;
+  font-weight: 600;
+  transition: 0.3s ease-in;
+  border-radius: 8px;
+  color: white;
+}
+
+
 /* services */
 .services-content {
   width: 75%;
