@@ -783,6 +783,9 @@ header.nav-fixed {
   color: #3f3a64;
   transition: all 0.5s;
 }
+.dark .team__title{
+  color: #eee;
+}
 .team__title:hover {
   color: #009f4d;
 }
